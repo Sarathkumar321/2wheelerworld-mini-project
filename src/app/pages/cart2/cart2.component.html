@@ -1,0 +1,35 @@
+
+
+
+    
+
+<head>
+   
+ 
+  <link href="https://fonts.googleapis.com/css?family=Bentham|Playfair+Display|Raleway:400,500|Suranna|Trocchi" rel="stylesheet">
+</head>
+
+<body>
+    <h1 class="he" style="text-align: center;">BIKE CART</h1><hr style="height:2px;border-width:0;color:rgb(240, 0, 0);background-color:gray"> 
+  <div class="wrapper">
+    <div class="product-img">
+      <img src="../../../assets/images/{{cart2[0].image}}" height="420" width="327">
+    </div>
+    <div class="product-info">
+      <div class="product-text">
+        <h1>{{cart2[0].name}}</h1>
+        <span class="det">Fuel Efficiency:</span><span class="det1">{{cart2[0].fuel_efficiency}}kmpl</span><br>
+        <span class="det">Engin Power:</span><span class="det1">{{cart2[0].engine_power}}bhp</span><br>
+        <span class="det">Topspeed:</span><span class="det1">{{cart2[0].top_speed}}kmph</span>
+        
+      </div>
+      <div class="product-price-btn">
+        <p><span>{{cart2[0].starting_price}}</span>&#x20B9;</p>
+        <!-- <button (click)="makePayment(00)" type="button">buy now</button> -->
+        <button type="button"(click)="gotoHere()" >place oreder</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+

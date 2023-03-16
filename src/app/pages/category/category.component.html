@@ -1,0 +1,27 @@
+<body class="back" style="background-image: url('../../../assets/images/back2.jpg' );">
+ <div class="container">
+    <div class="row">
+        <div class="col-md-3" *ngFor="let i of category">
+            <a routerLink="single"(click)="gotoHere2(i.id)">
+<div class="card ">
+    <div class="card_image">
+      <img src="../../assets/images/{{i.image}}"style="width:200px;height:200px" />
+       <div class="container">
+  <div class="row">
+    <div class="col-md-12 text-left">
+      <h3 class="animate-charcter"> {{i.title}}</h3>
+    </div>
+  </div>
+</div>
+    </div>
+    
+  </div>
+</a>
+</div>
+
+</div>
+</div>
+</body>
+
+   
+

@@ -1,0 +1,208 @@
+/* style{
+    background-color: black;
+  }
+  a{
+      text-decoration: none;
+  }
+  .cards-list {
+      z-index: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    
+    .card {
+      margin: 30px auto; 
+      
+      
+      margin-top: 60px;
+      width: 200px;
+      height: 200px;
+      border-radius: 40px;
+    
+      cursor: pointer;
+      transition: 0.4s;
+    }
+    
+    .card .card_image {
+      width: inherit;
+      height: inherit;
+      border-radius: 40px;
+    }
+    
+    .card .card_image img {
+      width: inherit;
+      height: inherit;
+      border-radius: 40px;
+      object-fit: cover;
+    }
+    
+    .card .card_title {
+      text-align: left;
+      color:rgb(7, 249, 176);
+      border-radius: 0px 0px 40px 40px;
+      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-weight: bold;
+      font-size:20px;
+      margin-top: -6px;
+      height: 40px;
+    }
+    
+    .card:hover {
+      transform: scale(0.9, 0.9);
+      box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+        -5px -5px 30px 15px rgba(0,0,0,0.22);
+    }
+    
+    .title-white {
+      color: white;
+    }
+    
+    .title-black {
+      color: black;
+    }
+    
+    @media all and (max-width: 500px) {
+      .card-list {
+        
+        flex-direction: column;
+      }
+    }
+    img{
+      width:360px;
+      height:420px;
+    }
+    
+   .waviy {
+    position: relative;
+   
+    font-size: 50px;
+  }
+  .waviy span {
+    font-family:Lucida Handwriting;
+    position: relative;
+    display: inline-block;
+    color:rgb(8, 8, 8);
+    text-transform: uppercase;
+    animation: waviy  1s   ;
+    animation-delay: calc(.1s * var(--i));
+   
+  }
+  @keyframes waviy {
+    0%,40%,100% {
+      transform: translateY(0)
+    }
+    20% {
+      transform: translateY(-20px)
+    }
+  } 
+  .container{
+    margin-left: 85px;
+    
+   
+  }
+  
+   */
+
+
+   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+body{
+	background: #F5F1EE;
+	font-family: 'Roboto', sans-serif;
+}
+.card{
+	width: 300px;
+	border-radius: 10px;
+  margin-left: 70px;
+  margin-right: 60px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.card-body{
+  height: 384px;
+  background-color: black;
+  border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.card-img-top{
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+  height: 300px;
+  width: 100%;
+}
+span.text{
+	font-size: 16px;
+  color:rgb(6, 128, 251);
+}
+small.text-muted-mt-1{
+	font-size: 16px;
+ 
+
+}
+small.text-muted{
+  font-size:10px;
+  color:greenyellow;
+}
+h5.mb-0{
+	font-size: 1rem;
+  color:greenyellow;
+}
+.mb-0{
+  color:goldenrod
+}
+small.ghj{
+	font-size: 9px;
+}
+.mid{
+	background: #ECEDF1;
+}
+h6.ml-1{
+	font-size: 13px;
+}
+small.key{
+	text-decoration: underline;
+	font-size: 9px;
+	cursor: pointer;
+}
+.btn-danger{
+	color: #FFCBD2;
+}
+.btn-danger:focus{
+	box-shadow: red;
+}
+small.justify-content-center{
+	font-size: 9px;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+@media screen and (max-width:600px){
+    .col-sm-4{
+        margin-bottom: 50px;
+    }
+}
+h6{
+  font-size: 16px;
+  color:aqua
+}
+h3{
+  color:silver;
+  font-family:fantasy;
+  
+}
+
+.d-flex {
+background:transparent;
+height:px;
+}
+small.text-muted-mb-1{
+  color:orangered;
+}
+small.text-muted-mb-2{
+  color:orangered;
+}
+.col{
+  height: 75px;
+}

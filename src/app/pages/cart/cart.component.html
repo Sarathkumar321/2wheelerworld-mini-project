@@ -1,0 +1,47 @@
+<!-- <body style="background-color:rgb(138, 138, 144);"style="align-items: center;">
+<h1 style="text-align: center;">ACCESSORY CART</h1><hr style="height:2px;border-width:0;color:rgb(240, 0, 0);background-color:gray">
+<section class="articles">
+    <article *ngFor="let i of cart ">
+      <div class="article-wrapper">
+        <figure style="height:300px;width: 368px;">
+          <img src="../../../assets/images/{{i.image}}" alt=""style="height:300px;width: 368px;" />
+        </figure >
+        <div class="article-body">
+          <h2>{{i.name}}</h2>
+          <h3>&#x20B9;{{i.price}}</h3>
+          <p>{{i.description}}
+            </p>
+          <a  class="btn"><h6>Add to cart</h6></a> 
+        </div>
+      </div>
+    </article>
+    </section>
+</body> -->
+<head>
+   
+ 
+  <link href="https://fonts.googleapis.com/css?family=Bentham|Playfair+Display|Raleway:400,500|Suranna|Trocchi" rel="stylesheet">
+</head>
+
+<body>
+    <h1  class="he" style="text-align: center;">ACCESSORY CART</h1><hr style="height:2px;border-width:0;color:rgb(240, 0, 0);background-color:gray"> 
+  <div class="wrapper">
+    <div class="product-img">
+      <img src="../../../assets/images/{{cart[0].image}}" height="420" width="327">
+    </div>
+    <div class="product-info">
+      <div class="product-text">
+        <h1>{{cart[0].name}}</h1>
+        <span class="det">{{cart[0].description}}</span>
+      </div>
+      <div class="product-price-btn">
+        <p><span>{{cart[0].price}}</span>&#x20B9;</p><br>
+      
+        <button type="button"(click)="gotoHere(cart[0])" >place oreder</button>
+        
+      </div>
+    </div>
+  </div>
+
+</body>
+

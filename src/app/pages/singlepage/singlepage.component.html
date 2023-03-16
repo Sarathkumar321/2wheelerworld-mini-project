@@ -1,0 +1,59 @@
+
+<!-- <body style="background-color:rgb(8, 8, 9);">
+    <div class="container">
+       <div class="row">
+           <div class="col-md-3" *ngFor="let x of single">
+               <a >
+   <div class="card ">
+       <div class="card_image">
+         <img src="../../assets/images/{{x.image}}"style="width:200px;height:200px" />
+          <div class="card_title">
+           <p></p>
+         </div> 
+       </div>
+       
+     </div>
+   </a>
+   </div>
+   
+   </div>
+   </div>
+   </body>
+   
+       -->
+
+
+
+
+
+   <body style="background-color:hsl(55, 85%, 42%);">
+ <div class="container d-flex justify-content-center">
+  <div class="row mt-5">
+    <div class="col-sm-4"*ngFor="let x of single">
+      <div class="card">
+    <img src="../../../assets/images/{{x.image}}" class="card-img-top" width="100%">
+    <div class="card-body pt-0 px-0">
+      <div class="d-flex flex-row justify-content-between mb-0 px-3">
+       <div class="row"><div class="col"><h3>{{x.name}}</h3></div>
+       <div>
+        <small class="text-muted-mt-1">STARTING AT</small>
+        <h5 class="text-right">&#x20B9;{{x.starting_price}}&ast;</h5></div></div>
+      </div>
+      <hr class="mt-2 mx-3">
+      <div class="d-flex flex-row justify-content-between px-3 pb-4">
+        <div class="d-flex flex-column"><span class="text">Fuel Efficiency   =========></span><small class="text-muted"></small></div>
+
+        <div class="d-flex flex-column"><h5 class="mb-0">{{x.fuel_efficiency}}<h6>kmpl</h6></h5><small class="text-muted text-right"></small></div>
+      </div>
+      <div class="d-flex flex-row justify-content-between p-3 mid">
+        <div class="d-flex flex-column"><small class="text-muted-mb-1">ENGINE</small><div class="d-flex flex-row"><img src="../../../assets/images/engin.webp" width="35px" height="25px"><h6>{{x.engine_power}}&nbsp;bhp</h6></div></div>
+        <div class="d-flex flex-column"><small class="text-muted-mb-2">TOPSPEED</small><div class="d-flex flex-row"><img src="../../../assets/images/speedo.jpeg"width="35px" height="35px"><h6 class="ml-1">{{x.top_speed}}&nbsp;kmph&ast;</h6></div></div>
+      </div>
+      
+      <div class="mx-3 mt-3 mb-2"><a (click)="gotoHere2(x.id)" ><button type="button" class="btn bg-primary" ><small>ADD TO CART</small></button></a></div>
+       
+    </div>
+  </div>
+    </div>  
+  </div></div>
+</body>

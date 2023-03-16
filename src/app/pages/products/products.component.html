@@ -1,0 +1,32 @@
+<body style="background-color:rgb(138, 138, 144);">
+    <!-- <div class="container">
+        <div class="row">
+            <div class="col-md-4"  *ngFor="let i of product ">
+                <div class="card" style="width: 18rem;">
+                    <img src="{{i.image}}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">{{i.name}}</h5>
+                      <p class="card-text">{{i.price}}</p>
+                      <a href="#" class="btn btn-secondary">View Products</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div> -->
+    
+    <section class="articles">
+        <article *ngFor="let i of product ">
+          <div class="article-wrapper">
+            <figure style="height:300px;width: 368px;">
+              <img src="../../../assets/images/{{i.image}}" alt=""style="height:300px;width: 368px;" />
+            </figure >
+            <div class="article-body">
+              <h2>{{i.name}}</h2>
+              <h3>&#x20B9;{{i.price}}</h3>
+              <p>{{i.description}}
+                </p>
+              <a  class="btn" (click)="gotoHere1(i.id)"><h6>Add to cart</h6></a> 
+            </div>
+          </div>
+        </article>
+        </section>

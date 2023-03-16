@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "wheelerworld-b328e": {
+      "hosting": {
+        "mini_project": [
+          "wheelerworld-b328e"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "wheelerworld-b328e"
+  }
+}

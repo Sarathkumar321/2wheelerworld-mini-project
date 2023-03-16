@@ -1,0 +1,16 @@
+<body style="background-color:rgb(138, 138, 144);">
+<div class="container">
+    <div class="row">
+        <div class="col-md-4"  *ngFor="let i of accessory">
+            <div class="card" style="width: 18rem; ">
+                <img src="../../../assets/images/{{i.image}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">{{i.name}}</h5>
+                  <p class="card-text">{{i.description}}</p>
+                  <a href="product" (click)="gotoHere(i.id)"class="btn btn-secondary">View Products</a>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
+</body>

@@ -1,0 +1,141 @@
+ style{
+  background-color: black;
+}
+a{
+    text-decoration: none;
+}
+.cards-list {
+    z-index: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    margin: 30px auto; 
+    
+    /* margin-right: 30px;
+    margin-left: 30px; */
+    margin-top: 60px;
+    width: 200px;
+    height: 200px;
+    border-radius: 40px;
+  /* box-shadow: 5px 5px 30px 7px rgb(0, 0, 0), -5px -5px 30px 7px rgb(123, 121, 166); */
+    cursor: pointer;
+    transition: 0.4s;
+    margin-bottom: 50px;
+  }
+  
+  .card .card_image {
+    width: inherit;
+    height: inherit;
+    border-radius: 40px;
+  }
+  
+  .card .card_image img {
+    width: inherit;
+    height: inherit;
+    border-radius: 40px;
+    object-fit: cover;
+  }
+  
+  .card .card_title {
+    text-align: left;
+    color:rgb(7, 43, 249);
+    border-radius: 0px 0px 40px 40px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size:20px;
+    margin-top: -6px;
+    height: 40px;
+  }
+  
+  .card:hover {
+    transform: scale(0.9, 0.9);
+    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+      -5px -5px 30px 15px rgba(0,0,0,0.22);
+  }
+  
+  .title-white {
+    color: white;
+  }
+  
+  .title-black {
+    color: black;
+  }
+  
+  @media all and (max-width: 500px) {
+    .card-list {
+      
+      flex-direction: column;
+    }
+  }
+  img{
+    width:360px;
+    height:420px;
+  }
+  
+ .waviy {
+  position: relative;
+ 
+  font-size: 50px;
+}
+.waviy span {
+  font-family:Lucida Handwriting;
+  position: relative;
+  display: inline-block;
+  color:rgb(8, 8, 8);
+  text-transform: uppercase;
+  animation: waviy  1s   ;
+  animation-delay: calc(.1s * var(--i));
+ 
+}
+@keyframes waviy {
+  0%,40%,100% {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-20px)
+  }
+} 
+.container{
+  margin-left: 85px;
+  
+  
+ 
+}
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #1285a5 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 20px;
+      text-align: left;
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+.back{
+  width: 1920px;
+  height: 1080px;
+}

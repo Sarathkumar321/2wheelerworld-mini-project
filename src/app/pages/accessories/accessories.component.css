@@ -1,0 +1,23 @@
+.card-title{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:orangered
+}
+.card-text{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    height: 250px;
+    color:goldenrod
+}
+.container{
+    margin-left: 110px;
+    margin-right: 100px;
+}
+.card{
+    margin-left: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+   
+}
+.card-body{
+    background:black;
+}
