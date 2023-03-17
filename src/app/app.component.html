@@ -1,3 +1,17 @@
-<app-navbar></app-navbar>
+<!-- <app-navbar></app-navbar>
 <router-outlet></router-outlet>
-<app-footer></app-footer>
+<app-footer></app-footer> -->
+<ng-container *ngIf="showHeader">
+
+    <app-navbar></app-navbar>
+
+</ng-container>
+
+
+<router-outlet></router-outlet>
+
+<ng-container *ngIf="showHeader">
+
+    <app-footer></app-footer>
+
+</ng-container>

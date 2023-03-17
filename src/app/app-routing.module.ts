@@ -11,41 +11,47 @@ import { ProductsComponent } from './pages/products/products.component';
 import { CartComponent } from './pages/cart/cart.component';
 import { Cart2Component } from './pages/cart2/cart2.component';
 import { OrderformComponent } from './pages/orderform/orderform.component';
-
+import { ForgotPasswordComponent } from './pages/forgot-password/forgot-password.component';
+import { AngularFireAuthGuard, loggedIn, redirectLoggedInTo, redirectUnauthorizedTo } from '@angular/fire/compat/auth-guard';
 
 const routes: Routes = [
   {
-    path:'',component:HomeComponent
-    },
+    path:'home',component:HomeComponent,canActivate: [AngularFireAuthGuard]
+  },
+  { 
+    path: '', redirectTo: '/signup', pathMatch: 'full' },
   {
-    path:'category',component:CategoryComponent 
+    path:'category',component:CategoryComponent ,canActivate: [AngularFireAuthGuard]
   },
   {
     path:'signup',component:SignupComponent
   },
   {
-    path:'about',component:AboutComponent
+    path:'about',component:AboutComponent,canActivate: [AngularFireAuthGuard]
   },
   {
-    path:'contact',component:ContactusComponent
+    path:'contact',component:ContactusComponent,canActivate: [AngularFireAuthGuard]
   },
   {
     path:'single',component:SinglepageComponent
   },
   {
-    path:'accessory',component:AccessoriesComponent
+    path:'accessory',component:AccessoriesComponent,canActivate: [AngularFireAuthGuard]
   },
   {
     path:'product',component:ProductsComponent
   },
   {
-    path:'cart',component:CartComponent
+    path:'cart',component:CartComponent,canActivate: [AngularFireAuthGuard]
   },
  {
-  path:'cart2',component:Cart2Component
+  path:'cart2',component:Cart2Component,canActivate: [AngularFireAuthGuard]
  },
  {
   path:'order',component:OrderformComponent
+ },
+ {
+  path:'forgotpassword',component:ForgotPasswordComponent
  },
 
 ];

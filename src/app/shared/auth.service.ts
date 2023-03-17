@@ -31,7 +31,7 @@ export class AuthService {
         icon: 'success',
         title: 'You are successfully logged in'
       })
-      this.router.navigate(['']);
+      this.router.navigate(['/home']);
     }, err => {
       // alert('Invalid Email or Password');
       const Toast = Swal.mixin({
@@ -117,12 +117,22 @@ export class AuthService {
       .then(() => {
         console.log('Contact information added successfully');
         // alert('Contact information added successfully');
-        Swal.fire({
-          icon: 'success',
-          title: 'details added successfully',
+        const Toast = Swal.mixin({
+          toast: true,
+          position: 'bottom-end',
           showConfirmButton: false,
-          timer: 1500
-        });
+          timer: 3000,
+          timerProgressBar: true,
+          didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+          }
+        })
+        
+        Toast.fire({
+          icon: 'success',
+          title: 'Contact information added successfully'
+        })
       })
       .catch((error) => {
         console.error('Error adding Query : ', error);
@@ -170,6 +180,49 @@ export class AuthService {
           });
         });
        
+      }
+
+      //forgot password
+      forgotpassword(email : string){
+        this.fireauth.sendPasswordResetEmail(email).then(() =>{
+          console.log('order details added successfully');
+          const Toast = Swal.mixin({
+            toast: true,
+            position: 'bottom-end',
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+              toast.addEventListener('mouseenter', Swal.stopTimer)
+              toast.addEventListener('mouseleave', Swal.resumeTimer)
+            }
+          })
+          
+          Toast.fire({
+            icon: 'success',
+            title: 'Link to Reset Password is successfully sended to registered Email id '
+          })
+          this.router.navigate(['/signup']);
+        }, err =>
+        {
+          // alert('something went wrong');
+          const Toast = Swal.mixin({
+            toast: true,
+            position: 'bottom-end',
+            showConfirmButton: false,
+            timer: 4000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+              toast.addEventListener('mouseenter', Swal.stopTimer)
+              toast.addEventListener('mouseleave', Swal.resumeTimer)
+            }
+          })
+          
+          Toast.fire({
+            icon: 'error',
+            title: 'something went wrong'
+          })
+        })
       }
   }
   

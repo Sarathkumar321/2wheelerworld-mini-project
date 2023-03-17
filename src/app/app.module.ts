@@ -26,6 +26,7 @@ import { provideDatabase,getDatabase } from '@angular/fire/database';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { FormsModule } from '@angular/forms';
 import { OrderformComponent } from './pages/orderform/orderform.component';
+import { ForgotPasswordComponent } from './pages/forgot-password/forgot-password.component';
 
 
 
@@ -48,6 +49,7 @@ import { OrderformComponent } from './pages/orderform/orderform.component';
          CartComponent,
          Cart2Component,
          OrderformComponent,
+         ForgotPasswordComponent,
         
   ],
   imports: [
